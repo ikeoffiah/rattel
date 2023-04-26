@@ -183,6 +183,7 @@ function Authform() {
             </Button>
           </Box>
         </CardContent>
+        <small>Already have an account ? <a href="/login">Log in</a></small>
       </Card>
     </div>
   );
