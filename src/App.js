@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ChatPage from "./pages/ChatPage";
 import LandingPage from "./pages/landingPage";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
