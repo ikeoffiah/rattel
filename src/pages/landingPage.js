@@ -1,8 +1,7 @@
 import React from 'react'
-import { useNavigate } from "react-router-dom";
 import NavBar from '../components/NavBar'
 import botImage from "../assets/images/botchat.png"
-import Button from 'react-bootstrap/Button';
+
 
 
 function landingPage() {
