@@ -6,7 +6,7 @@ import botImage from "../assets/images/botchat.png";
 function LandingPage() {
   return (
     <div>
-      <NavBar />
+   
 
       <div style={{ backgroundColor: "greenyellow", height: "100vh" }}>
         <div
