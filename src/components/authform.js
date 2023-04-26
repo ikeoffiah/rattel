@@ -42,7 +42,7 @@ function Authform() {
     event.preventDefault();
   };
 
-  const baseURL = "http://127.0.0.1:8000";
+  const baseURL = "https://rattelapp.herokuapp.com";
 
   const signup = async (register_data) => {
     await axios

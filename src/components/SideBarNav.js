@@ -33,7 +33,7 @@ function Sidebar() {
   const [productName, setProductName] = useState('')
   const drawerWidth = 240;
   const navigate = useNavigate()
-  const baseURL = "http://127.0.0.1:8000";
+  const baseURL = "https://rattelapp.herokuapp.com";
 
 
   const handleCloseForm = () => {

@@ -16,7 +16,7 @@ function ChatPage() {
   const [loading, setLoading] = useState(false);
   const location = useLocation();
   const navigate = useNavigate()
-  const baseURL = 'http://127.0.0.1:8000'
+  const baseURL = 'https://rattelapp.herokuapp.com'
 
   const addMyChat = (msg) => {
     setLoading(true)
