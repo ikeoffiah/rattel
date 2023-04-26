@@ -44,7 +44,7 @@ function Sidebar() {
 
 
 const handleSubmitDoc = () =>{
-  console.log(file)
+ 
 
   if( file.type !== "application/pdf"){
     toast.error("Please upload a PDF file")

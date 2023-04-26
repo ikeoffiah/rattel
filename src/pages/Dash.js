@@ -27,7 +27,7 @@ function Dash() {
     
     setLoading(false)
   }).catch((err)=>{
-    console.log(err.response.status);
+   
 
     if (err.response.status === 401){
       navigate('/login')

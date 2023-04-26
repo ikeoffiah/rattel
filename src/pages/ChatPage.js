@@ -41,6 +41,16 @@ function ChatPage() {
   };
 
 
+  const handlekeyDown = (event) =>{
+   
+    if (event.key === 'Enter') {
+      addMyChat(msg)
+    }
+
+   
+  }
+
+
   const sendChat = async(token)=>{
 
     await axios.post(`${baseURL}/chat`,{"query_data":msg,"project_name":location.state.name}, {
@@ -53,8 +63,7 @@ function ChatPage() {
             type: "other",
             msg: res.data.message,
           };
-          console.log(res)
-          console.log(res.data.message)
+          
           setChat((prev) => [...prev, recieved_msg]);
           setLoading(false)
       }).catch((e)=>{
@@ -114,13 +123,14 @@ function ChatPage() {
             onChange={(e) => {
               setMsg(e.target.value);
             }}
+            onKeyDown={handlekeyDown}
             value={msg}
           />
           {loading?null:<button
             className="btnSendMsg"
             id="sendMsgBtn"
             onClick={() => addMyChat(msg)}
-            onKeyDown={() => addMyChat(msg)}
+            
           >
             <FontAwesomeIcon icon={faPaperPlane} />
           </button>}

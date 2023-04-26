@@ -46,7 +46,7 @@ function Signin() {
         navigate("/dashboard");
       })
       .catch((error) => {
-        console.log(error.response.data);
+        
         setButtonclick(false);
         toast.error(`${error.response.data.errors[0]}`);
       });
