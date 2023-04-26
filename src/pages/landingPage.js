@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import botImage from "../assets/images/botchat.png";
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function LandingPage() {
   return (
